@@ -1,4 +1,4 @@
-// 6  ,  7
+// 6  ,  7  ,  12 , 13 , 14
 
 let para = document.querySelector('.para')
 let ul = document.querySelector('.ul')
@@ -9,13 +9,13 @@ let ul = document.querySelector('.ul')
 // in your browser using for loop.
 
 // SOLUTION :
-// function messsage(){
+
 //     for (let i = 1; i <= 5 ; i++){
 //      console.log('Hello world');
-//      para.innerHTML+= (i, 'Hello world' , i) ;
+//      para.innerHTML+= ( `Hello world <br>`) ;
 //     }
-// }
-//   messsage()
+
+
 
 // QUESTION NO 2:
 
@@ -23,11 +23,8 @@ let ul = document.querySelector('.ul')
 
 // SOLUTION :
 
-// let arr = ['1','2','3','4','5','6','7','8','9','10'];
-// for(i=0;i<arr.length;i++ ){
-// ul.innerHTML +=`<li> ${arr[i]}</li>`
-// // console.log(i); 
-// // console.log(arr.length); 
+// for(let i= 1;i<=10;i++){
+// para.innerHTML+= `${i} <br>`
 
 // }
 
@@ -45,7 +42,7 @@ let ul = document.querySelector('.ul')
 
 // for (let i = 1; i <= times; i++){
 
-// console.log(` ${userInput}  ${userInput} * ${i} = ${userInput * i}`);
+// console.log(`  ${userInput} * ${i} = ${userInput * i}`);
 // }
 
 
@@ -105,30 +102,22 @@ let ul = document.querySelector('.ul')
 
 // SOLUTION :
 
-// let name1 = prompt('Enter name of item 1'); 
-// let name2 = prompt('Enter name of item 2'); 
-// let name3 = prompt('Enter name of item 3'); 
-// let name4 = prompt('Enter name of item 4'); 
 
+// const items = +prompt('Enter no of items you want!');
 
-// console.log(name1);
-// console.log(name2);
-// console.log(name3);
-// console.log(name4);
+// let arr =[];
 
-// let arr = [name1,name2,name3,name4]
+// for(let i=0;i < items;i++){
+//      let itemName = prompt('Enter the required items');
+//      arr.push(itemName);
+// }
+
 // console.log(arr);
 
 
-// for (let i = 0; i <arr.length; i++ ){
-// para.innerHTML = `No of items : ${arr.length} <br> Items :`
-// ul.innerHTML +=    `<li>${arr[i]}</li>`
-// }
 
 
-
-
-// QUESTION NO 7:
+// QUESTION NO 7:         :  INCOMPLETE :
 
 // 7. Generate the following series in your browser. See example 
 // output.
@@ -136,11 +125,12 @@ let ul = document.querySelector('.ul')
 // SOLUTION :
 
 // let counting = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15']
-// console.log(counting);
-// para.innerHTML = `Counting : ${counting} <br> Reverse-Counting : ${counting.reverse()} <br> Even-Counting  }`
 
+// console.log(counting);
+// para.innerHTML = `Counting : ${counting} <br> Reverse-Counting : ${counting.reverse()} <br> Even-Counting : `
 // for (let i=1;i<=15;i++){
-//   console.log(i);
+//      console.log(i);
+
 // }
 
 
@@ -154,6 +144,40 @@ let ul = document.querySelector('.ul')
 // found in the list or not. Example
 
 // SOLUTION :
+
+
+let  A = ['cake', 'apple' ,'pie', 'cookie', 'chips', 'patties'];
+
+const userInput = prompt('Enter the required item!');
+let isAvailable = false;
+for(let i = 0; i<A.length;i++){
+     if(userInput===A[i]){
+          console.log('Item is avlailable at index',A.indexOf(userInput))
+          isAvailable = true;
+     }
+}
+
+
+     if(!isAvailable){
+     console.log('not available');
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // let  A = ['cake', 'apple' ,'pie', 'cookie', 'chips', 'patties'];
 // console.log(A);
@@ -262,12 +286,11 @@ let ul = document.querySelector('.ul')
 // console.log(A[2]);
 
 
-// // para.innerHTML +=`${A[0]}  <br >`
-// // para.innerHTML += `${A[1]}  <br >`
-// // para.innerHTML += `${A[2]}  <br >`
+// para.innerHTML +=`${A[0]}  <br >`
+// para.innerHTML += `${A[1]}  <br >`
+// para.innerHTML += `${A[2]}  <br >`
 
 // ul.innerHTML = `<li>${A[0]}</li> <li>${A[1]}</li><li>${A[2]}</li>`
-
 
 
 
@@ -309,7 +332,7 @@ let ul = document.querySelector('.ul')
 
 
 
-// QUESTION NO 18:
+// QUESTION NO 19:
 
 
 // 19. Write a program that will write out a wedge of stars. The user 
@@ -328,15 +351,15 @@ let ul = document.querySelector('.ul')
 //     console.log(str);
 //   }
   
-for (let i = 1;i<=7; i=i+1){
-let str = '';
-for(let j=0; j < i ;j= j+1){
-     str += '*'
-}
-console.log(str);
+// for (let i = 1;i<=7; i=i+1){
+// let str = '';
+// for(let j=0; j < i ;j= j+1){
+//      str += '*'
+// }
+// console.log(str);
 
 
-}
+// }
 
 
 
